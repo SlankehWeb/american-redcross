@@ -1,5 +1,20 @@
-partials med farver 
+partial med logo
+partial med farver 
+partial med  mixin med fonts
+partial med mixin body reset
 
-partials med  mixin med fonts
-
-partials med mixin body reset
+partial med et design udlag for nav'en (
+    mixin der inholder størelse, placering og farver af de forskellig elementer
+)
+partial der har et design udlag for rød knapper(
+    mixin der inholder størelse og farver
+)
+partial til billeder for placements og størelse(
+   mixin der inholder størelse af billeder og centreing
+)
+partial for icon design og text(
+    mixin der inholder størelse af icon og text størelse og farve
+)
+partial for slide gallary cards (
+    mixin der indeholder opsætning af card størelse og placering på elemneter inde i det
+)
