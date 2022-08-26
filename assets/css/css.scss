@@ -3,8 +3,215 @@
 @use 'reset';
 
 @include fonts.mainFonts;
-// font-family: 'Tinos', serif;
+// font-family: 'Tinos', serif; 
 // font-family: 'Montserrat', sans-serif;
+*{
+    @include reset.mainReset;
+}
 body{
-    background-color: s.$S-khaki ;
+   background-color: s.$N-light-gray;
+}
+
+#firstNav {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align: right;
+    background-color: rgba(s.$N-light-gray, .1);
+    ul {
+        position: relative;
+        right: 17%; 
+    }
+    li{
+        font-family: 'Montserrat', sans-serif;
+        display: inline;
+        text-align: center;
+        padding-left: 1%;
+        font-size: .8em;
+    }
+    li:nth-child(4){
+        color: red;
+        font-weight: bold;
+    }
+}
+#secondNav{
+    border-top: 3px solid rgba(s.$P-gray, .5);
+    box-shadow: 0 6px 18px 1px rgba(s.$P-black, 0.197);
+    text-align: center;
+    background-color: s.$P-white;
+    padding-top: .5%;
+    padding-bottom: 1%;
+    ul{
+
+    }
+    .navImg{
+        position: relative;
+        top: .5em;
+        width: 5%;
+        height: auto;
+        
+    }
+    li{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        font-weight: bold; 
+        display: inline;
+        padding-left: 3%;
+        color: s.$P-gray;
+    }
+    li:nth-child(7){
+        color: red;
+    }
+    i{
+        padding-left: 3%;
+       
+    }
+}
+#centerPic{
+    position: relative;
+    text-align: center;
+    .bigPic{
+        width: 71%;
+        height: auto;
+    }
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-size: 2.5vw;
+        max-width: 55%;
+    }
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-weight: 200;
+        font-size: 1.7vw;
+        max-width: 55%;
+    }
+    .bigImgText1{
+        position: absolute;
+        bottom: 25vh;
+        left: 18%;
+        color: s.$P-white;
+    }
+    button{
+        background-color: s.$P-red;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.6%;
+        border: none;
+        border-radius: 3px;
+        font-weight: bold;
+        color: s.$P-white;
+        font-size: 1vw;
+        position: relative;
+        right: 43%;
+        top: 2em;
+    }
+    
+}
+
+#centerPic2{
+    position: relative;
+    text-align: center;
+    .bigPic{
+        width: 71%;
+        height: auto;
+    }
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-size: 2.5vw;
+        max-width: 30%;
+    }
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-weight: 200;
+        font-size: 1.5vw;
+        max-width: 40%;
+    }
+    .bigImgText1{
+        position: absolute;
+        bottom: 20vh;
+        left: 18%;
+        color: s.$P-black;
+    }
+    button{
+        background-color: s.$P-red;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.6%;
+        border: none;
+        border-radius: 3px;
+        font-weight: bold;
+        color: s.$P-white;
+        font-size: 1vw;
+        position: relative;
+        right: 33%;
+        top: 4vh;
+    }
+    input{
+        position: relative;
+        right: 34%;
+        top: 4vh;
+        border-radius: 3px;
+        padding: 0.5%;
+    }
+    p{
+        position: relative;
+        right: 41%;
+        top: 12vh;
+        font-size: 0.7vw;
+    }
+}
+
+#centerPic3{
+    position: relative;
+    text-align: center;
+    .bigPic{
+        width: 71%;
+        height: auto;
+    }
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-size: 2.5vw;
+        max-width: 60%;
+    }
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-weight: 200;
+        font-size: 1.5vw;
+        max-width: 80%;
+    }
+    .bigImgText1{
+        position: absolute;
+        bottom: 20vh;
+        left: 50%;
+        color: s.$P-white;
+    }
+    button{
+        background-color: s.$P-red;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.6%;
+        border: none;
+        border-radius: 3px;
+        font-weight: bold;
+        color: s.$P-white;
+        font-size: 1vw;
+        position: relative;
+        right: 33%;
+        top: 4vh;
+    }
+    input{
+        position: relative;
+        right: 34%;
+        top: 4vh;
+        border-radius: 3px;
+        padding: 0.5%;
+    }
+    p{
+        position: relative;
+        right: 15%;
+        top: 10vh;
+        font-size: 1vw;
+    }
 }
