@@ -1,0 +1,10 @@
+@use 'fonts';
+@use 'colors' as s;
+@use 'reset';
+
+@include fonts.mainFonts;
+// font-family: 'Tinos', serif;
+// font-family: 'Montserrat', sans-serif;
+body{
+    background-color: s.$S-khaki ;
+}
