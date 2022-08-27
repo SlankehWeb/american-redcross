@@ -1,6 +1,8 @@
 @use 'fonts';
 @use 'colors' as s;
 @use 'reset';
+@use 'redbutton';
+@use 'centerpic';
 
 @include fonts.mainFonts;
 // font-family: 'Tinos', serif; 
@@ -26,7 +28,7 @@ body{
         display: inline;
         text-align: center;
         padding-left: 1%;
-        font-size: .8em;
+        font-size: 0.8vw;
     }
     li:nth-child(4){
         color: red;
@@ -52,10 +54,10 @@ body{
     }
     li{
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.2em;
+        font-size: 1vw;
         font-weight: bold; 
         display: inline;
-        padding-left: 3%;
+        padding-left: 2%;
         color: s.$P-gray;
     }
     li:nth-child(7){
@@ -63,15 +65,14 @@ body{
     }
     i{
         padding-left: 3%;
-       
+        font-size: 1vw;
     }
 }
 #centerPic{
     position: relative;
     text-align: center;
     .bigPic{
-        width: 71%;
-        height: auto;
+        @include centerpic.centerPic;
     }
     h2{
         font-family: 'Montserrat', sans-serif;
@@ -93,14 +94,7 @@ body{
         color: s.$P-white;
     }
     button{
-        background-color: s.$P-red;
-        font-family: 'Montserrat', sans-serif;
-        padding: 0.6%;
-        border: none;
-        border-radius: 3px;
-        font-weight: bold;
-        color: s.$P-white;
-        font-size: 1vw;
+        @include redbutton.redButton;
         position: relative;
         right: 43%;
         top: 2em;
@@ -112,8 +106,7 @@ body{
     position: relative;
     text-align: center;
     .bigPic{
-        width: 71%;
-        height: auto;
+        @include centerpic.centerPic;
     }
     h2{
         font-family: 'Montserrat', sans-serif;
@@ -135,14 +128,7 @@ body{
         color: s.$P-black;
     }
     button{
-        background-color: s.$P-red;
-        font-family: 'Montserrat', sans-serif;
-        padding: 0.6%;
-        border: none;
-        border-radius: 3px;
-        font-weight: bold;
-        color: s.$P-white;
-        font-size: 1vw;
+        @include redbutton.redButton;
         position: relative;
         right: 33%;
         top: 4vh;
@@ -153,6 +139,7 @@ body{
         top: 4vh;
         border-radius: 3px;
         padding: 0.5%;
+        width: 10vw;
     }
     p{
         position: relative;
@@ -166,8 +153,7 @@ body{
     position: relative;
     text-align: center;
     .bigPic{
-        width: 71%;
-        height: auto;
+        @include centerpic.centerPic;
     }
     h2{
         font-family: 'Montserrat', sans-serif;
@@ -189,29 +175,31 @@ body{
         color: s.$P-white;
     }
     button{
-        background-color: s.$P-red;
-        font-family: 'Montserrat', sans-serif;
-        padding: 0.6%;
-        border: none;
-        border-radius: 3px;
-        font-weight: bold;
-        color: s.$P-white;
-        font-size: 1vw;
+        @include redbutton.redButton;
         position: relative;
-        right: 33%;
+        right: 23%;
         top: 4vh;
     }
     input{
         position: relative;
-        right: 34%;
+        right: 23%;
         top: 4vh;
         border-radius: 3px;
         padding: 0.5%;
+        width: 5vw;
     }
     p{
         position: relative;
         right: 15%;
         top: 10vh;
         font-size: 1vw;
+    }
+    select{
+        position: relative;
+        width: 12vw;
+        right: 23%;
+        top: 4vh;
+        padding: 0.7%;
+        font-size: 1vw
     }
 }

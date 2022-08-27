@@ -1,0 +1,10 @@
+@mixin redButton {
+    background-color: s.$P-red;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1%;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: s.$P-white;
+    font-size: 1vw;
+}
